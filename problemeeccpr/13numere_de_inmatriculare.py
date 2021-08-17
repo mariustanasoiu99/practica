@@ -1,5 +1,4 @@
 nr_introduse = []
-nr_valide = []
 
 string1 = ['AB', 'AR', 'AG', 'B', 'BC', 'BH', 'BN', 'BT', 'BV', 'BR', 'BZ', 'CS',
 'CL', 'CJ','CT', 'CV', 'DB', 'DJ', 'GL', 'GR', 'GJ', 'HR', 'HD', 'IL','IS', 'IF','MM', 'MH', 'MS', 'NT', 'OT', 'PH',
@@ -15,7 +14,4 @@ for i in nr_introduse:
     if i.split()[0] in string1:
         if i.split()[1].isdigit() and len(i.split()[1]) in [2, 3]:
             if i.split()[2].isupper() and len(i.split()[2]) == 3 and i.split()[2].isalpha():
-                nr_valide.append(i)
-
-for i in nr_valide:
-    print(i)
+                print(i)
